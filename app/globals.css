@@ -1,7 +1,18 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
+
+nav{
+  display: flex;
+  gap: 30px;
+  
+  /* flex-direction: column; */
+}
+nav li{
+  list-style: none;
+   
+}
+/* @custom-variant dark (&:is(.dark *));
 
 @theme inline {
   --color-background: var(--background);
@@ -119,4 +130,4 @@
   body {
     @apply bg-background text-foreground;
   }
-}
+} */
