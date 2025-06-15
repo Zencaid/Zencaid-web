@@ -7,9 +7,12 @@ import Image from 'next/image'
 import './globals.css'
 import '@/lib/fontawesome'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAmbulance, faArrowRight, faBone, faCheck, faCircleExclamation, faDna, faEye, faGlassCheers, faHeartPulse, faPhone, faPills, faStethoscope, faSyringe, faTooth } from '@fortawesome/free-solid-svg-icons';
+import { faAmbulance, faArrowRight, faBone, faCheck, faCircleExclamation, faDna, faEye, faGlassCheers, faHeartPulse, faPhone, faPills, faStar, faStethoscope, faSyringe, faTooth } from '@fortawesome/free-solid-svg-icons';
 import {areasSection} from "../lib/data/areasSection"
 import {containerinfo} from  "../lib/data/containerinfo"
+import Carousel from '@/lib/Carousel'
+import HospitalCarousel from '@/lib/HospitalCarousel'
+
 
 export default function Home() {
   const Container = containerinfo[0];
@@ -250,16 +253,16 @@ export default function Home() {
 
 
 
-    <div>
+    <div className='bg-gray-300 pb-15 pt-10 '>
 
       <div className='aligne-center text-center my-15'>
 
-      <p>Our Services</p>
+      <p style={{fontWeight:'800'}}>Our Services</p>
       <h3 style={{fontSize:"50px"}}>We Serve in Different <span style={{fontWeight:"700"}}>Areas For Our Patient</span> </h3>
       </div>
 
       <div className='grid grid-cols-4 gap-18 m-10  leading-[40px] ' >
-        <div>
+        <div className='bg-white rounded-4xl p-5'>
           <div>
             <div>
               <FontAwesomeIcon icon={faGlassCheers} className='text-[50px]'/>
@@ -279,7 +282,7 @@ export default function Home() {
 
         </div>
         
-        <div className=' rounded-4xl'>  
+        <div className='bg-white rounded-4xl p-5 '>  
          {/* bg-orange-700 */}
           <div>
             <div>
@@ -298,7 +301,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div>
+        <div className='bg-white rounded-4xl p-5'>
           <div>
             <div>
               <FontAwesomeIcon icon={faTooth} className='text-[50px]'/>
@@ -316,7 +319,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div>
+        <div className='bg-white rounded-4xl p-5'>
           <div>
             <div>
               <FontAwesomeIcon icon={faSyringe} className='text-[50px]'/>
@@ -334,7 +337,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div>
+        <div className='bg-white rounded-4xl p-5'>
           <div>
             <div>
               <FontAwesomeIcon icon={faBone} className='text-[50px]'/>
@@ -352,7 +355,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div>
+        <div className='bg-white rounded-4xl p-5'>
           <div>
             <div>
               <FontAwesomeIcon icon={faDna} className='text-[50px]'/>
@@ -370,7 +373,7 @@ export default function Home() {
           </div>
         </div>
         
-         <div>
+         <div className='bg-white rounded-4xl p-5'>
           <div>
             <div>
               <FontAwesomeIcon icon={faHeartPulse} className='text-[50px]'/>
@@ -390,7 +393,7 @@ export default function Home() {
         </div>
 
 
-         <div>
+         <div className='bg-white rounded-4xl p-5'>
           <div>
             <div>
               <FontAwesomeIcon icon={faPills} className='text-[50px]'/>
@@ -411,7 +414,7 @@ export default function Home() {
       </div>
     </div>
     
-  <div  className='' style={{margin:'300px 0px'}} >
+  <div  className='' style={{margin:'300px 30px'}} >
     <div className='' style={{overflow:'hidden', position:'relative', left:'160px'}} >
       <p style={{fontWeight:'800'}}>Your Health is our top priority</p>
       <div className='w-[60%] text-[50px]'>
@@ -419,26 +422,39 @@ export default function Home() {
       </div>
     </div>
 
-    <div className='flex justify-between themlastimgss' >
-      <div>
-        <div>
+      
+    <div className='flex justify-between themlastimgss ' style={{margin:"50px 100px"}} >
+      <div> 
+        <div style={{marginBottom:'30px'}}>
           <Image src={Conf} alt='Doctors Talking to thier patient' className='rounded-4xl'  style={{width:'35rem', height:'310px'}}/>
         </div>
-        <div></div>
+
+        <div>
+        <Carousel/>
+      </div>
+
       </div>
       <div>
-        <div></div>
+        <div className='m-10 bg-blue-100 w-[40%] p-4 rounded-4xl '>
+          <p>Average Google rating</p>
+          <div className='flex gap-7'>
+            <FontAwesomeIcon icon={faStar} className='relative top-4'/>
+            <p style={{fontWeight:"800", fontSize:'30px'}}>4.9</p>
+          </div>
+        </div>
         <div>
 
         </div>
         <div>
-           <Image src={Serrr} alt='Doctors Talking to thier patient' height={400} width={500} className='rounded-4xl'  style={{width:'35rem', height:'350px'}} />
+           <Image src={Serrr} alt='Doctors Talking to thier patient' height={400} width={500} className='rounded-4xl'  style={{width:'35rem', height:'500px'}} />
         </div>  
       </div>
     </div>
   
   </div>
-
+      <div>
+        <HospitalCarousel/>
+      </div>
     </div>
   );
 }
