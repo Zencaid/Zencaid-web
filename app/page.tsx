@@ -1,5 +1,9 @@
 // import Image from "next/image";
 // import Contents from './containerinfo';
+import Seorg from './Sergoeons.jpeg'
+import Serrr from './image/ser.jpeg'
+import Conf from './image/confi.jpeg'
+import Image from 'next/image'
 import './globals.css'
 import '@/lib/fontawesome'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -28,10 +32,10 @@ export default function Home() {
 
     <div className=' relative left-[60%] flex gap-[20px] m-[10px] ' >
       <nav>
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Contact Us</li>
-        <li>Donate</li>
+        <li style={{fontWeight:"800"}}>Home</li>
+        <li style={{fontWeight:"800"}}>About Us</li>
+        <li style={{fontWeight:"800"}}>Contact Us</li>
+        <li style={{fontWeight:"800"}}>Donate</li>
       </nav>
       <div>
         {/* <FontAwe */}
@@ -79,7 +83,7 @@ export default function Home() {
       
 
 
-      <div className='my-[90px] flex justify-between'>
+      <div className='my-[90px] flex justify-between' style={{margin:'300px 0px', position:"relative", top:'50px'}}>
         <div className="bg-blue-300 rounded-4xl" style={{margin:'40px', padding:"30px",lineHeight:'40px'}}>
           <div className="flex gap-[20px]">
             <div>
@@ -170,7 +174,7 @@ export default function Home() {
 
       </div>
 
-    <div>
+    <div className='flex justify-between' style={{margin:'120px 50px'}}>
       <div>
         <h3>About Zencaid</h3>
         <div style={{margin:"40px 0", fontWeight:'500'}} className='text-5xl' >
@@ -232,22 +236,29 @@ export default function Home() {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio fuga aspernatur odit aut, aliquid saepe dolorem assumenda nostrum porro! Labore.</p>
         </div>
 
-        <div className='my-10'>
-          <button>More About Us</button>
+        <div className='my-10 rounded-4xl bg-purple-300 ' style={{width:'20%', height:'55px', }} >
+         <FontAwesomeIcon icon={faArrowRight} style={{backgroundColor:"white", borderRadius:"50%", padding:'10px', position:'relative', top:'10px', left:'6px'   }}/>
+          <button style={{position:'relative', left:'10px' }}>More About Us</button>
         </div>
       </div>
-      {/* <Image></Image> */}
+
+      <div className='relative' >
+      <Image src={Seorg} alt='These Are Seorgeons at work' width={800} height={100} style={{top:"140px", position:"relative", height:"70%", borderRadius:"30px" }}  />
+
+      </div>
     </div>
 
 
 
     <div>
+
       <div className='aligne-center text-center my-15'>
 
       <p>Our Services</p>
       <h3 style={{fontSize:"50px"}}>We Serve in Different <span style={{fontWeight:"700"}}>Areas For Our Patient</span> </h3>
       </div>
-      <div className='grid grid-cols-4 gap-18 m-10  leading-[40px]'>
+
+      <div className='grid grid-cols-4 gap-18 m-10  leading-[40px] ' >
         <div>
           <div>
             <div>
@@ -268,7 +279,8 @@ export default function Home() {
 
         </div>
         
-        <div>
+        <div className=' rounded-4xl'>  
+         {/* bg-orange-700 */}
           <div>
             <div>
               <FontAwesomeIcon icon={faEye} className='text-[50px]'/>
@@ -376,6 +388,8 @@ export default function Home() {
           </div>
 
         </div>
+
+
          <div>
           <div>
             <div>
@@ -396,27 +410,35 @@ export default function Home() {
 
       </div>
     </div>
-
-    <div>
-      <p>Your Health is our top priority</p>
-      <div>
-        Our track record speaks for itself. Many individuals have chosen <span style={{opacity:"0.5"}} >our medical center and have had positive,transformative experience.</span> 
+    
+  <div  className='' style={{margin:'300px 0px'}} >
+    <div className='' style={{overflow:'hidden', position:'relative', left:'160px'}} >
+      <p style={{fontWeight:'800'}}>Your Health is our top priority</p>
+      <div className='w-[60%] text-[50px]'>
+        Our track record speaks for itself. Many individuals have chosen <span style={{opacity:"0.4"}} >our medical center and have had positive,transformative experience.</span> 
       </div>
     </div>
 
-    <div>
+    <div className='flex justify-between themlastimgss' >
       <div>
-        <div></div>
+        <div>
+          <Image src={Conf} alt='Doctors Talking to thier patient' className='rounded-4xl'  style={{width:'35rem', height:'310px'}}/>
+        </div>
         <div></div>
       </div>
       <div>
-        <div></div>
         <div></div>
         <div>
 
         </div>
+        <div>
+           <Image src={Serrr} alt='Doctors Talking to thier patient' height={400} width={500} className='rounded-4xl'  style={{width:'35rem', height:'350px'}} />
+        </div>  
       </div>
     </div>
+  
+  </div>
+
     </div>
   );
 }
