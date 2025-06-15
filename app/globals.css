@@ -11,6 +11,10 @@ nav{
 nav li{
   list-style: none;
    
+
+}
+.MinLiboss li{
+  margin-bottom: 20px;
 }
 /* @custom-variant dark (&:is(.dark *));
 
