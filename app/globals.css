@@ -17,7 +17,126 @@ nav li{
 .MinLiboss li{
   margin-bottom: 20px;
 }
+@media (min-width:200px) and (max-width:800px) {
+  .cheifenav{
+    left: 0% !important;
+    /* text-wrap: nowrap; */
+  }
+  /* This styling is for the section of the landing page thhat is opposite thhe image in the begening  */
+  .babasmurf{
+    flex-direction: column !important;
+  }
+ 
+  .firstd h2{
+    font-size: 55px !important;
+    margin: 0px !important;
+    position: relative;
+    left:-40px;
+    top: -50px;
+    width:100% !important;
+  }
+  .firstd p{
+    width: 100% !important;
+  }
+  /* This style is for the first button about learn more */
+  .babathemfir{
+    left: -40px !important;
+  }
+  .themfirstbtn{
+    width:60% !important;
+  }
+/* This section is right aboev the IMage from the landing page forst glance */
+.Thembefiretheims{
+  left: 0px !important;
+}
+  .Thembefiretheims p{
+    width: 150% !important;
+    font-size: 13px !important;
+  } 
+  /* this style is for the esclamtion logo */
+  .exclamate{
+    font-size: 30px !important;
+  }
+  .exclamate1{
+    position: relative;
+    left:80px;
+  }
 
+  .babfims{
+    position: relative;
+    top:150px;
+  }
+
+
+  /* This style is for the first container section */
+  .ogacontainee{
+    flex-direction: column !important;
+  }
+  /* This style is for the section has has image ofn seorgeons  */
+  .imgsec2{
+    flex-direction: column !important;
+  }
+  .imgsec2 .themh3{
+    margin: 0px !important;
+    font-size: 40px !important;
+
+  }
+  .imgsec2 p{
+    width: 250% !important;
+  }
+  /* This style is fir the button in this section */
+  .Morebtnsec{
+    width:60% !important;
+    /* height: 80px !important; */
+  }
+  .Morebtnsec button{
+    left: 20px !important;
+  }
+  .BababSuroginImae{
+    top:-80px ;
+  }
+  /* This style is for Ouer Services section */
+  .chefeofgrid{
+    grid-template-columns: repeat(1,1fr) !important;
+  }
+
+  /* Before footer Section */
+  .themlastimgss2{
+      left: 0px !important;
+    }
+
+    .themlastimgss23{
+      width: 100% !important;
+      font-size: 30px !important;
+    }
+
+    .themlastimgss{
+      position: relative;
+      top:50px;
+      margin: 10px !important;
+      flex-direction: column !important;
+    }
+    /* This style is for the carouisel  */
+    .themFats{
+      position: relative;
+      top:10px;
+    }
+     .themFats2{
+      position: relative;
+      top:15px;
+    }
+    .ThecheifeCaro{
+      padding:0px;
+      margin: 20px 10px !important;
+      /* height: 60vh !important; */
+    }
+    /* This styling is for the 4.9 rating sextion close to the footer */
+    .CheifeRating{
+      width: 80% !important;
+      text-align: center;
+      align-items: center;
+    }
+}
 
 /* @custom-variant dark (&:is(.dark *));
 
