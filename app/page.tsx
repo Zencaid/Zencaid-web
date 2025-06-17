@@ -9,9 +9,11 @@ import './globals.css'
 import '@/lib/fontawesome'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAmbulance, faArrowRight, faBone, faCheck, faCircleExclamation, faDna, faEye, faGlassCheers, faHeartPulse, faPhone, faPills, faStar, faStethoscope, faSyringe, faTooth } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import {areasSection} from "../lib/data/areasSection"
 import {containerinfo} from  "../lib/data/containerinfo"
 import Carousel from '@/lib/Carousel'
+import ResponsiveNavbar from './ResponsiveNavbar'
 // import HospitalCarousel from '@/lib/HospitalCarousel'
 
 
@@ -32,8 +34,11 @@ export default function Home() {
 
   // const AreaSec = areasSection[0]; 
   return (
-    <div style={{overflowX:'hidden',margin:"10px"}}>
+    <div style={{overflowX:'hidden',margin:""}} className='cheifeofSatf'>
+      <div style={{position:"relative", left:'15px'}}>
 
+      <ResponsiveNavbar/>
+      </div>
     <div className='cheifenav relative left-[60%] flex gap-[20px] m-[10px] ' >
       <nav>
         <li style={{fontWeight:"800"}}>Home</li>
@@ -461,7 +466,59 @@ export default function Home() {
   
   </div>
       <div>
-        {/* <HospitalCarousel/> */}
+       
+       <footer className='grid grid-cols-4'>
+        
+        <div className='babyfoot'>
+          <h3>Community</h3>
+          <div>
+            <div  className='minbabfiitd'>Doctors</div>
+            <div className='minbabfiitd'>Testimonials</div>
+            <div className='minbabfiitd'>FAQ's</div>
+            <div className='minbabfiitd'>Blog</div>
+            <div className='minbabfiitd'>Site Map</div>
+          </div>
+        </div>
+        <div  className='babyfoot'>
+          <h3>About</h3>
+          <div>
+            <div className='minbabfiitd'>Careers</div>
+            <div className='minbabfiitd'>Education</div>
+            <div className='minbabfiitd'>About Us</div>
+            <div className='minbabfiitd'>Area of Care</div>
+            <div className='minbabfiitd'>Volunteers</div>
+          </div>
+        </div>
+        <div  className='babyfoot'>
+          <h3>Support</h3>
+          <div>
+            <div className='minbabfiitd'>Visitor Information</div>
+            <div className='minbabfiitd'>Emergency Care</div>
+            <div className='minbabfiitd'>Donate</div>
+            <div className='minbabfiitd'>Online Serveices</div>
+            <div className='minbabfiitd'>Pay your Bilss</div>
+          </div>
+        </div>
+        <div  className='babyfoot'>
+          <h3>Trust & Legal</h3>
+          <div>
+            <div className='minbabfiitd'>Terms & Condition</div>
+            <div className='minbabfiitd'>Privacy Policy</div>
+            <div className='minbabfiitd'>Hospital Stay</div>
+            <div style={{ position:"relative", top:"15px",overflowY:"hidden"}}>
+            <div style={{fontWeight:"800"}} className='minbabfiitd'>Social Media</div>
+            <div>
+              <FontAwesomeIcon icon={faFacebook} className='mx-1'/>
+              <FontAwesomeIcon icon={faTwitter} className='mx-1'/>
+              <FontAwesomeIcon icon={faInstagram} className='mx-1'/>
+              <FontAwesomeIcon icon={faLinkedin} className='mx-1'/>
+
+            </div>
+            </div>
+            
+          </div>
+        </div>
+       </footer>
       </div>
     </div>
   );

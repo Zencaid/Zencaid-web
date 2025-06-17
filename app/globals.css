@@ -17,10 +17,52 @@ nav li{
 .MinLiboss li{
   margin-bottom: 20px;
 }
+footer{
+  color: white;
+  padding: 80px 0;
+   overflow-y: hidden;
+   /* margin-bottom: 30px; */
+   background-color: navy;
+   border-radius: 40px 40px 0 0;
+   margin: 0 35px;
+    overflow-x: hidden;
+   
+}
+footer h3{
+ 
+  font-weight: 700;
+}
+.babyfoot{
+  line-height:50px;
+position: relative;
+   left: 100px;
+   overflow-x: hidden;
+}
+
+.minbabfiitd{
+  
+  opacity: 0.5;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .4s ease-in-out;
+}
+.minbabfiitd:hover{
+  opacity:1;
+  text-decoration: underline;
+}
 @media (min-width:200px) and (max-width:800px) {
+.cheifeofSatf{
+  margin: 0px !important;
+}
+nav{
+  display: none;
+}
   .cheifenav{
     left: 0% !important;
     /* text-wrap: nowrap; */
+  }
+  .cheifenav button{
+    display: none;
   }
   /* This styling is for the section of the landing page thhat is opposite thhe image in the begening  */
   .babasmurf{
@@ -135,6 +177,18 @@ nav li{
       width: 80% !important;
       text-align: center;
       align-items: center;
+    }
+    footer{
+      grid-template-columns: repeat(1,1fr) !important;
+      margin: 0px;
+      border-radius: 0px 0px 0 0;
+    }
+    .babyfoot{
+      left:30px !important;
+      margin-bottom: 20px;
+    }
+    .babyfoot h3{
+      font-size: 30px !important;
     }
 }
 
