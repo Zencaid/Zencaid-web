@@ -54,7 +54,7 @@ export default function Home() {
       </div>
     </div>
 
-      <div className='babasmurf my-[180px] flex' style={{margin:'180px 60px'}}>
+      <div className='babasmurf my-[100px] flex' style={{margin:'180px 60px'}}>
         <div>
 
           <div className='firstd'>
@@ -427,7 +427,7 @@ export default function Home() {
       </div>
     </div>
     
-  <div  className='' style={{margin:'300px 30px'}} >
+  <div  className='' style={{margin:'200px 30px'}} >
     <div className='themlastimgss2' style={{overflow:'hidden', position:'relative', left:'160px'}} >
       <p style={{fontWeight:'800'}}>Your Health is our top priority</p>
       <div className='w-[60%] text-[50px] themlastimgss23 '>
