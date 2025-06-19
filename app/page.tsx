@@ -14,6 +14,7 @@ import {areasSection} from "../lib/data/areasSection"
 import {containerinfo} from  "../lib/data/containerinfo"
 import Carousel from '@/lib/Carousel'
 import ResponsiveNavbar from './ResponsiveNavbar'
+import Link from 'next/link';
 // import HospitalCarousel from '@/lib/HospitalCarousel'
 
 
@@ -41,7 +42,10 @@ export default function Home() {
       </div>
     <div className='cheifenav relative left-[60%] flex gap-[20px] m-[10px] ' >
       <nav>
-        <li style={{fontWeight:"800"}}>Home</li>
+        <Link href="/Doctors-Dashboard" >
+             <li style={{fontWeight:"800"}}>Home</li>
+        </Link>
+       
         <li style={{fontWeight:"800"}}>About Us</li>
         <li style={{fontWeight:"800"}}>Contact Us</li>
         <li style={{fontWeight:"800"}}>Donate</li>
