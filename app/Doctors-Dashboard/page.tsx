@@ -1,5 +1,7 @@
 import {DoctorAppointment} from '@/lib/data/DoctorsPinfo/DoctorAppointment'
 import './DoctorsApp.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSms,faMessage,faPhone } from '@fortawesome/free-solid-svg-icons';
 export default function Doctors() {
     const DAppointment = DoctorAppointment[0]
     const DAppointment1 = DoctorAppointment[1]
@@ -34,12 +36,12 @@ export default function Doctors() {
                     <p>{DAppointment.Diagnosis}</p>
                     <div className='SubbabaDPP'>
                              <div>
-                        {/* icon */}
+                    <FontAwesomeIcon icon={faMessage}/>
                     <button>Chat</button>
 
                     </div>
                    <div>
-                    {/* icon */}
+                   <FontAwesomeIcon icon={faPhone}/>
                      <button>Call</button>
                    </div>
                     </div>
@@ -56,12 +58,12 @@ export default function Doctors() {
                     <p>{DAppointment1.Diagnosis}</p>
                     <div className='SubbabaDPP'>
                              <div>
-                        {/* icon */}
+                      <FontAwesomeIcon icon={faMessage}/>
                     <button>Chat</button>
 
                     </div>
                    <div>
-                    {/* icon */}
+                    <FontAwesomeIcon icon={faPhone}/>
                      <button>Call</button>
                    </div>
                     </div>
@@ -77,12 +79,12 @@ export default function Doctors() {
                     <p>{DAppointment2.Diagnosis}</p>
                      <div className='SubbabaDPP'>
                              <div>
-                        {/* icon */}
+                     <FontAwesomeIcon icon={faMessage}/>
                     <button>Chat</button>
 
                     </div>
                    <div>
-                    {/* icon */}
+                    <FontAwesomeIcon icon={faPhone}/>
                      <button>Call</button>
                    </div>
                     </div>
@@ -98,12 +100,12 @@ export default function Doctors() {
                     <p>{DAppointment3.Diagnosis}</p>
                     <div className='SubbabaDPP'>
                              <div>
-                        {/* icon */}
+                        <FontAwesomeIcon icon={faMessage}/>
                     <button>Chat</button>
 
                     </div>
                    <div>
-                    {/* icon */}
+                    <FontAwesomeIcon icon={faPhone}/>
                      <button>Call</button>
                    </div>
                     </div>
@@ -119,12 +121,12 @@ export default function Doctors() {
                     <p>{DAppointment4.Diagnosis}</p>
                     <div className='SubbabaDPP'>
                              <div>
-                        {/* icon */}
+                       <FontAwesomeIcon icon={faMessage}/>
                     <button>Chat</button>
 
                     </div>
                    <div>
-                    {/* icon */}
+                   <FontAwesomeIcon icon={faPhone}/>
                      <button>Call</button>
                    </div>
                     </div>
@@ -140,12 +142,12 @@ export default function Doctors() {
                     <p>{DAppointment5.Diagnosis}</p>
                  <div className='SubbabaDPP'>
                              <div>
-                        {/* icon */}
+                       <FontAwesomeIcon icon={faMessage}/>
                     <button>Chat</button>
 
                     </div>
                    <div>
-                    {/* icon */}
+                  <FontAwesomeIcon icon={faPhone}/>
                      <button>Call</button>
                    </div>
                     </div>
@@ -161,12 +163,12 @@ export default function Doctors() {
                     <p>{DAppointment6.Diagnosis}</p>
                    <div className='SubbabaDPP'>
                              <div>
-                        {/* icon */}
+                         <FontAwesomeIcon icon={faMessage}/>
                     <button>Chat</button>
 
                     </div>
                    <div>
-                    {/* icon */}
+                   <FontAwesomeIcon icon={faPhone}/>
                      <button>Call</button>
                    </div>
                     </div>
@@ -183,12 +185,12 @@ export default function Doctors() {
                      <div className='SubbabaDPP'>
 
                      <div>
-                        {/* icon */}
+                        <FontAwesomeIcon icon={faMessage}/>
                     <button>Chat</button>
 
                     </div>
                     <div>
-                    {/* icon */}
+                 <FontAwesomeIcon icon={faPhone}/>
                      <button>Call</button>
                    </div>
                     </div>
