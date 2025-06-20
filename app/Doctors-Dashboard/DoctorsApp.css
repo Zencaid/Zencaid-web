@@ -1,0 +1,36 @@
+.AppointmentConstainers{
+  background-color: white;
+  padding:15px 40px;
+  border-radius: 30px;
+  width: 80%;
+   /* margin-bottom:60px; */
+}
+.CheifeAppint{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:25px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 40px;
+    left: 50px;
+   
+    
+    /* margin: 50px; */
+    
+}
+.CheifeAppint h3{
+    font-weight: 800;
+    font-size: 20px;
+}
+.CheifeAppint p{
+    font-size: 18px;
+    font-weight:600;
+    opacity: 0.6;
+}
+.SubbabaDPP{
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}

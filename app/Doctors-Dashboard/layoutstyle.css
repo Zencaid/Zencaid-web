@@ -1,0 +1,13 @@
+li{
+    text-transform:uppercase;
+    position: relative;
+    top: 500px;
+    transition:  linear .4s ;
+    font-weight: 700;
+    /* display: flex; */
+    justify-content: space-around;
+    /* left: 40px; */
+}
+li:hover{
+    color: rgba(0, 255, 0, 0.38);
+}
