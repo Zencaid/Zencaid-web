@@ -28,7 +28,7 @@ export default function DoctorLayout({ children }: { children: React.ReactNode }
       
         <ul className="space-y-2 cheifeofoption">
           {/* i Would add links to the icon so when the page is shrinked the icons would be showing instaed of the text and you can still click on it to naviage to the page */}
-          <div >
+          <div style={{marginBottom:"40px"}} >
             <div className='flex gap-2'> 
              <FontAwesomeIcon icon={faCalendar}/>
              <li>
@@ -39,7 +39,7 @@ export default function DoctorLayout({ children }: { children: React.ReactNode }
         
           </div>
            
-            <div className='flex gap-2'>
+            <div className='flex gap-2 ' style={{marginBottom:"40px"}} >
               <FontAwesomeIcon icon={faPerson}/>
               <li>
               <Link href="/dashboard/reports">My Patients</Link> 
@@ -47,7 +47,7 @@ export default function DoctorLayout({ children }: { children: React.ReactNode }
 
             </div>
            
-            <div className='flex gap-2'>
+            <div className='flex gap-2' style={{marginBottom:"40px"}}>
             <FontAwesomeIcon icon={faMessage}/>
           <li>
             <Link href="/dashboard/users" >Chat</Link>
@@ -56,7 +56,7 @@ export default function DoctorLayout({ children }: { children: React.ReactNode }
 
             </div>
 
-          <div className='flex gap-2'>
+          <div className='flex gap-2' style={{marginBottom:"40px"}} >
             <FontAwesomeIcon icon={faPhone}/>
           <li>
             <Link href="/dashboard/settings">Calls</Link>
@@ -64,7 +64,7 @@ export default function DoctorLayout({ children }: { children: React.ReactNode }
 
           </div>
 
-            <div className='flex gap-2'>
+            <div className='flex gap-2' style={{marginBottom:"40px"}}>
             <FontAwesomeIcon icon={faBolt}/>
           <li>
             <Link href="/dashboard/messages">Setting</Link>
